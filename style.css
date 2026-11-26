@@ -771,6 +771,192 @@ body {
 }
 
 
+/* HALAMAN PROGRAM / PROGRAM.HTML */
+.program-header {
+  padding: 9rem 8% 3rem;
+  text-align: center;
+}
+.program-header h1 {
+  font-family: var(--font-judul);
+  font-size: 2.8rem;
+  color: var(--primary);
+  margin-bottom: 0.8rem;
+}
+.program-header p {
+  font-family: var(--font-isi);
+  font-size: 1rem;
+  color: var(--primary);
+  line-height: 1.6;
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+/* Container Program */
+.program-section {
+  width: 100%;
+  padding: 4rem 8%;
+}
+.program-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 4rem;
+  max-width: 110rem;
+  margin: 0 auto;
+}
+
+/* Teks Program */
+.program-text h2 {
+  font-family: var(--font-judul);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.2rem;
+}
+.program-text p {
+  font-family: var(--font-isi);
+  font-size: 1.2rem;
+  color: var(--primary);
+  line-height: 1.7;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+/* Gambar Program */
+.program-image img {
+  width: 100%;
+  height: 27rem;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 1.5rem;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+/* PROGRAM KUNJUNGAN */
+.program-kunjungan {
+  background-color: #ffffff;
+}
+/* PROGRAM MAGANG */
+.program-magang {
+  background-color: var(--primary);
+}
+.program-magang .program-text h2,
+.program-magang .program-text p {
+  color: #e4d3be;
+}
+/* PROGRAM CATERING */
+.program-catering {
+  background-color: #ffffff;
+}
+
+/* Banner Hubungi Kami */
+.program-cta {
+  background-color: #ffffff;
+  padding: 3rem 8%;
+}
+.program-cta-container {
+  position: relative;
+  width: 100%;
+  max-width: 110rem;
+  min-height: 15rem;
+  margin: 0 auto;
+  background-color: #4e2a14;
+  border-radius: 2rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 3rem;
+}
+/* Teks banner */
+.program-cta-text {
+  position: relative;
+  z-index: 3;
+  width: 55%;
+  max-width: 55%;
+}
+.program-cta-text h2 {
+  font-family: var(--font-isi);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #e4d3be;
+  margin-bottom: 0.8rem;
+}
+.program-cta-text p {
+  font-family: var(--font-isi);
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #e4d3be;
+}
+/* Tombol Hubungi Kami */
+.program-cta-button {
+  position: absolute;
+  z-index: 5;
+  left: 62%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  padding: 1.1rem 2.2rem;
+  background-color: #f4e6d8;
+  color: #4e2a14;
+  font-family: var(--font-isi);
+  font-size: 0.95rem;
+  font-weight: 500;
+  border-radius: 3rem;
+  white-space: nowrap;
+  transition: 0.3s ease;
+}
+/* Panah tombol */
+.program-cta-button::after {
+  content: "→";
+  font-size: 1.3rem;
+  transition: transform 0.3s ease;
+}
+.program-cta-button:hover {
+  transform: translate(-50%, calc(-50% - 3px));
+}
+.program-cta-button:hover::after {
+  transform: translateX(4px);
+}
+/* Gambar Banner */
+.program-cta-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 38%;
+  height: 100%;
+  z-index: 1;
+}
+.program-cta-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+/* batas antara gambar dan cokelat */
+.program-cta-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  z-index: 2;
+  background: linear-gradient(
+    to right,
+    #4e2a14 0%,
+    #4e2a14 15%,
+    rgba(78, 42, 20, 0.85) 35%,
+    rgba(78, 42, 20, 0.25) 65%,
+    transparent 100%
+  );
+  pointer-events: none;
+}
+
+
 /* HALAMAN KONTAK / KONTAK.HTML */
 .kontak-header {
   width: 100%;
