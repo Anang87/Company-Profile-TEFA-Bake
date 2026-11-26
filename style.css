@@ -345,3 +345,189 @@ body {
   background-color: var(--primary);
   transform: translateY(-3px);
 }
+
+
+/* HALAMAN TENTANG / TENTANG.HTML */
+.tentang-header {
+  padding: 9rem 8% 5rem;
+  text-align: center;
+}
+.tentang-header h1 {
+  text-align: center;
+  font-family: var(--font-judul);
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: var(--primary);
+}
+.tentang-header p {
+  font-family: var(--font-isi);
+  font-size: 1.3rem;
+  color: var(--primary);
+  line-height: 1.7;
+  max-width: 55rem;
+  margin: 0 auto;
+}
+
+/* Profil */
+.profil {
+  max-width: 110rem;
+  margin: 0 auto;
+  padding: 3rem 8% 5rem;
+
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  align-items: center;
+  gap: 4rem;
+}
+.profil-content {
+  background-color: #fff8ee;
+  min-height: 27rem;
+  padding: 2.5rem 2.8rem;
+  border: 1px solid #ead9c8;
+  border-radius: 2rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.12);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profil-content h2 {
+  font-family: var(--font-judul);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+.profil-content p {
+  font-family: var(--font-isi);
+  font-size: 1.2rem;
+  color: var(--primary);
+  line-height: 1.65;
+  text-align: justify;
+}
+.profil-image img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 2rem;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.12);
+}
+
+/* Sejarah */
+.sejarah {
+  margin-top: 6rem;
+  width: 100%;
+  padding: 4rem 8%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 4rem;
+  background-color: var(--primary);
+  box-shadow: 0 8px 10px -3px rgba(0, 0, 0, 0.2);
+}
+.sejarah-image img {
+  width: 100%;
+  height: 30rem;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 1.5rem;
+}
+.sejarah-content h2 {
+  font-family: var(--font-judul);
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: #e4d3be;
+  margin-bottom: 1.5rem;
+}
+.sejarah-content p {
+  font-family: var(--font-isi);
+  font-size: 1.2rem;
+  color: #e4d3be;
+  line-height: 1.8;
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+
+/* Visi Misi */
+.visi-misi {
+  width: 100%;
+  padding: 9rem 8%;
+  box-sizing: border-box;
+}
+.visi-misi h2 {
+  font-family: var(--font-judul);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 2rem;
+  text-align: left;
+}
+.visi-misi-container {
+  display: grid;
+  grid-template-columns: 0.7fr 1.2fr;
+  gap: 2rem;
+  align-items: stretch;
+}
+.visi-card,
+.misi-card {
+  background-color: #fff8ee;
+  padding: 2rem;
+  border: 1px solid #ead9c8;
+  border-radius: 1.2rem;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+  min-height: 27rem;
+}
+.visi-card h3,
+.misi-card h3 {
+  font-family: var(--font-judul);
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+.visi-card p {
+  font-family: var(--font-isi);
+  font-size: 1.2rem;
+  line-height: 1.65;
+  color: var(--primary);
+  text-align: justify;
+}
+.misi-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  counter-reset: nomor-misi;
+}
+.misi-card li {
+  counter-increment: nomor-misi;
+  position: relative;
+  padding-left: 3rem;
+  margin-bottom: 1.5rem;
+
+  font-family: var(--font-isi);
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--primary);
+  text-align: justify;
+}
+/* Nomor Lingkaran */
+.misi-card li::before {
+  content: counter(nomor-misi);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: #7a431e;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 600;
+}
