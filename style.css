@@ -1013,3 +1013,1330 @@ body {
 .jam-item:last-child {
   margin-bottom: 0;
 }
+
+
+/* FOOTER */
+.footer {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff8ee;
+  color: var(--primary);
+  padding: 4rem 8% 1.5rem;
+}
+/* Dekorasi Lingkaran */
+.footer::before {
+  content: "";
+  position: absolute;
+  width: 280px;
+  height: 280px;
+  background-color: #f4e6d8;
+  border-radius: 50%;
+  top: -80px;
+  left: -80px;
+  opacity: 0.7;
+}
+/* Container Footer */
+.footer-container {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1.2fr;
+  gap: 3rem;
+  align-items: center;
+  padding: 1rem 0 5rem;
+}
+/* Brand */
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.footer-brand img {
+  width: 95px;
+  height: 95px;
+  object-fit: contain;
+}
+.footer-brand h2 {
+  font-family: var(--font-judul);
+  font-size: 2.8rem;
+  color: var(--primary);
+  white-space: nowrap;
+}
+/* Footer Navigasi */
+.footer-nav h3,
+.footer-contact h3 {
+  font-family: var(--font-isi);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.7rem;
+  color: var(--primary);
+}
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-nav li {
+  margin-bottom: 0.45rem;
+}
+.footer-nav a {
+  display: inline-block;
+  color: var(--primary);
+  text-decoration: none;
+  font-size: 0.85rem;
+  transition: 0.3s;
+}
+.footer-nav a:hover {
+  color: #a66a3f;
+  transform: translateX(4px);
+}
+/* Habungi Kami */
+.footer-contact p {
+  color: var(--primary);
+  font-size: 0.85rem;
+  line-height: 1.6;
+  margin-bottom: 0.7rem;
+}
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+.footer-social a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #f2e3d3;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.footer-social a:hover {
+  background-color: #dfc4a8;
+  transform: translateY(-3px);
+}
+.footer-social img {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+}
+/* Copyright */
+.footer-bottom {
+  position: relative;
+  z-index: 2;
+  border-top: 1px solid #e9d8c5;
+  padding-top: 1rem;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 1rem;
+  color: var(--primary);
+}
+
+/* MEDIA QUARIES */
+
+/* LAPTOP */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/* TABLET & MOBILE */
+@media (max-width: 750px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.4rem 5%;
+    background-color: var(--primary);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  }
+  /* logo */
+  .navbar .navbar-logo img {
+    width: 110px;
+    height: auto;
+    display: block;
+  }
+  /* TOMBOL HAMBURGER */
+  .navbar .navbar-extra {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  #hamburger-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4.4rem;
+    height: 4.4rem;
+    color: var(--bg);
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  /* MENU DROPDOWN */
+  .navbar .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0.8rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary);
+    border-bottom: 1px solid var(--stroke);
+    transition:
+      max-height 0.4s ease,
+      opacity 0.3s ease,
+      padding 0.35s ease,
+      visibility 0.35s ease;
+  }
+
+  /* MENU SAAT DIBUKA */
+  .navbar .navbar-nav.active {
+    max-height: 350px;
+    visibility: visible;
+    opacity: 1;
+    padding: 1.8rem 0 2rem;
+    border-top: 1px solid var(--stroke);
+  }
+ /* LINK NAVIGASI */
+.navbar .navbar-nav a {
+  display: inline-block;
+  position: relative;
+  color: var(--white);
+  font-size: 1.125rem;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+  padding: 0.4rem 0;
+}
+
+/* GARIS BAWAH */
+.navbar .navbar-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--white);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.80s ease;
+}
+
+.navbar .navbar-nav a:hover::after,
+.navbar .navbar-nav a.active::after {
+  transform: scaleX(1);
+}
+  /* KONTEN AGAR TIDAK TERTUTUP NAVBAR */
+  body {
+    padding-top: 7rem;
+  }
+
+  /* INDEX.HTML */
+  /* BERANDA HERO */
+  .hero {
+    min-height: 68vh;
+    width: 100%;
+    padding: 8rem 5% 4rem;
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+  }
+  .hero-content {
+    max-width: 100%;
+  }
+  .hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  .hero-content p {
+    font-size: 1.35rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  .hero-image {
+    display: none;
+  }
+  .hero .tombol {
+    padding: 1rem 2.2rem;
+    font-size: 1.3rem;
+  }
+
+  /* Keunggulan */
+  .keunggulan {
+    padding: 4rem 3%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  .keunggulan-item img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .keunggulan-item p {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+
+  /* Tentang Tefa Singkat */
+  .tentang {
+    padding: 6rem 6%;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .tentang-image {
+    order: 1;
+  }
+  .tentang-content {
+    order: 2;
+  }
+  .tentang h2 {
+    font-size: 2.8rem;
+  }
+  .tentang-content p {
+    font-size: 1.5rem;
+    line-height: 1.7;
+  }
+  .tentang img {
+    width: 100%;
+    height: 30rem;
+    border-radius: 2rem;
+  }
+
+  /* Produk Unggulan */
+  .produk {
+    padding: 7rem 6%;
+  }
+  .produk-header {
+    margin-bottom: 4rem;
+  }
+  .produk-header h2 {
+    font-size: 2.8rem;
+  }
+  .produk-header p {
+    font-size: 1.4rem;
+  }
+  .produk-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .produk-card img {
+    height: 17rem;
+  }
+  .produk-desc {
+    padding: 1.2rem;
+  }
+  .produk-desc h3 {
+    font-size: 1.3rem;
+  }
+  .produk-desc p {
+    font-size: 1.3rem;
+  }
+
+  /* Pesan Sekarang */
+  .pesan {
+    min-height: 28rem;
+    padding: 5rem 6%;
+    background-position: center;
+  }
+  .pesan-content h2 {
+    font-size: 2.8rem;
+  }
+  .pesan-content p {
+    font-size: 1.4rem;
+  }
+  .pesan-content .tombol {
+    padding: 1rem 2.5rem;
+    font-size: 1.3rem;
+  }
+
+  /* TENTANG.HTML */
+  /* Header Tentang */
+  .tentang-header {
+    padding: 8rem 5% 3rem;
+  }
+  .tentang-header h1 {
+    font-size: 2.7rem;
+  }
+  .tentang-header p {
+    font-size: 1.2rem;
+  }
+  /* Profil */
+  .profil {
+    grid-template-columns: 1fr;
+    padding: 2rem 5% 4rem;
+    gap: 2.5rem;
+  }
+  .profil-content {
+    min-height: auto;
+    padding: 2.5rem;
+    order: 2;
+  }
+  .profil-content h2 {
+    font-size: 2rem;
+  }
+  .profil-content p {
+    font-size: 1.2rem;
+  }
+
+  .profil-image img {
+    height: 28rem;
+  }
+  /* Sejarah */
+  .sejarah {
+    margin-top: 3rem;
+    padding: 4rem 5%;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .sejarah-image img {
+    height: 28rem;
+  }
+  .sejarah-content h2 {
+    font-size: 2.2rem;
+  }
+  .sejarah-content p {
+    font-size: 1.2rem;
+  }
+  /* Visi Misi */
+  .visi-misi {
+    padding: 6rem 5%;
+  }
+  .visi-misi h2 {
+    font-size: 2.3rem;
+  }
+  .visi-misi-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .visi-card,
+  .misi-card {
+    min-height: auto;
+    padding: 2.5rem;
+  }
+
+  /* MENU.HTML */
+  /* Banner Menu */
+  .menu-banner {
+    height: 360px;
+  }
+  .menu-banner-content {
+    padding: 0 5%;
+    max-width: 500px;
+  }
+  .menu-banner-content h1 {
+    font-size: 2.8rem;
+  }
+  .menu-banner-content p {
+    font-size: 0.9rem;
+  }
+
+  /* Daftar Produk */
+  .daftar-produk {
+    padding: 3rem 5%;
+  }
+  .daftar-produk-header h2 {
+    font-size: 2.2rem;
+  }
+  .daftar-produk-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.2rem;
+  }
+  .daftar-produk-card img {
+    height: 180px;
+    object-fit: cover;
+  }
+  .daftar-produk-desc {
+    padding: 1rem;
+  }
+  .daftar-produk-desc h3 {
+    font-size: 1.2rem;
+  }
+  .daftar-produk-desc p {
+    font-size: 0.95rem;
+  }
+
+  /* Modal Detail */
+  .modal-content {
+    max-width: 650px;
+    padding: 25px;
+    gap: 20px;
+    border-radius: 25px;
+  }
+  .modal-image img {
+    height: 230px;
+    object-fit: cover;
+  }
+  .modal-info h2 {
+    font-size: 1.6rem;
+  }
+  .modal-info h3 {
+    font-size: 1rem;
+    margin-bottom: 12px;
+  }
+  .modal-info p {
+    font-size: 0.85rem;
+    margin-bottom: 15px;
+  }
+  .order-wa {
+    font-size: 0.85rem;
+    padding: 12px;
+  }
+
+  /* PROGRAM.HTML */
+  .program-header {
+    padding: 8rem 5% 3rem;
+  }
+  .program-header h1 {
+    font-size: 2.5rem;
+  }
+  .program-header p {
+    font-size: 1.1rem;
+  }
+  /* Container Program */
+  .program-section {
+    padding: 3rem 5%;
+  }
+  .program-container {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  /* Teks Program */
+  .program-text h2 {
+    font-size: 2.1rem;
+  }
+  .program-text p {
+    font-size: 1.15rem;
+  }
+
+  /* Gambar Program */
+  .program-image img {
+    height: 30rem;
+  }
+
+  /* Banner Hubungi Kami */
+  .program-cta {
+    padding: 3rem 5%;
+  }
+  .program-cta-container {
+    min-height: 20rem;
+    padding: 2.5rem;
+  }
+  .program-cta-text {
+    width: 65%;
+    max-width: 65%;
+    position: relative;
+    z-index: 3;
+  }
+  .program-cta-text h2 {
+    font-size: 1.7rem;
+  }
+  .program-cta-text p {
+    font-size: 1rem;
+  }
+  .program-cta-image {
+    width: 42%;
+  }
+  .program-cta-button {
+    left: 62%;
+    top: 50%;
+    padding: 1rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  /* KONTAK.HTML */
+  /* Header Kontak */
+  .kontak-header {
+    padding: 8rem 5% 3rem;
+  }
+  .kontak-header h1 {
+    font-size: 2.6rem;
+  }
+  .kontak-header p {
+    font-size: 1.1rem;
+  }
+
+  /* Kontak Utama */
+  .kontak-utama {
+    padding: 3rem 5%;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .kontak-image img {
+    height: 30rem;
+  }
+  .kontak-content {
+    gap: 2rem;
+  }
+
+  /* Hubungi Kami */
+  .hubungi-kami h2 {
+    font-size: 2rem;
+  }
+  .hubungi-kami p {
+    font-size: 1.1rem;
+  }
+
+  /* Media Sosial */
+  .media-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  /* Lokasi dan Jam Operasional */
+  .informasi-kontak {
+    padding: 4rem 5%;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .lokasi-card iframe {
+    height: 28rem;
+  }
+  .jam-card {
+    min-height: auto;
+  }
+  .jam-card h2 {
+    font-size: 2rem;
+  }
+  .jam-item {
+    font-size: 1.1rem;
+    padding: 1.3rem;
+  }
+  .footer {
+    padding: 3.5rem 5% 1.5rem;
+  }
+
+  /* Container Footer */
+  .footer-container {
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr;
+    column-gap: 0.5rem;
+    row-gap: 2rem;
+    align-items: start;
+    padding: 1rem 0 3rem;
+  }
+
+  /* Brand */
+  .footer-brand {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  .footer-brand img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer-brand h2 {
+    font-size: 2.3rem;
+  }
+
+  /* Navigasi */
+  .footer-nav {
+    grid-column: 1;
+  }
+
+  .footer-nav h3,
+  .footer-contact h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
+
+  .footer-nav li {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-nav a {
+    font-size: 0.9rem;
+  }
+
+  /* Hubungi Kami */
+  .footer-contact {
+    grid-column: 2;
+  }
+
+  .footer-contact p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* Media Sosial */
+  .footer-social {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+  }
+
+  .footer-social a {
+    width: 30px;
+    height: 30px;
+  }
+
+  .footer-social img {
+    width: 16px;
+    height: 16px;
+  }
+
+  /* Copyright */
+  .footer-bottom {
+    padding-top: 1rem;
+  }
+
+  .footer-bottom p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile Phone */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+
+  /* NAVBAR */
+  .navbar {
+    padding: 1.2rem 4%;
+  }
+  .navbar .navbar-logo img {
+    width: 95px;
+  }
+  #hamburger-menu {
+    width: 4rem;
+    height: 4rem;
+    font-size: 1rem;
+  }
+  .navbar .navbar-nav {
+    gap: 1.2rem;
+  }
+  .navbar .navbar-nav.active {
+    padding: 2.4rem 0 2.8rem;
+  }
+  .navbar .navbar-nav a {
+    font-size: 1.125rem;
+  }
+  body {
+    padding-top: 6.4rem;
+  }
+
+  /* INDEX.HTML */
+  /* HERO */
+  .hero {
+    min-height: 62vh;
+    padding: 7rem 5% 3rem;
+    background-position: 58% center;
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+  }
+  .hero-content p {
+    font-size: 1.25rem;
+  }
+  .hero .tombol {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  /* Keunggulan */
+  .keunggulan {
+    padding: 3rem 2%;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5rem;
+  }
+  .keunggulan-item img {
+    width: 3.8rem;
+    height: 3.8rem;
+  }
+  .keunggulan-item p {
+    font-size: 0.85rem;
+    line-height: 1.3;
+  }
+
+  /* Tentang Tefa */
+  .tentang {
+    padding: 5rem 5%;
+    gap: 2.5rem;
+  }
+  .tentang h2 {
+    font-size: 2.5rem;
+  }
+  .tentang-content p {
+    font-size: 1.35rem;
+  }
+  .tentang img {
+    height: 24rem;
+    border-radius: 1.5rem;
+  }
+  .tentang .tombol {
+    padding: 1rem 2.3rem;
+    font-size: 1.25rem;
+  }
+
+  /* Produk Unggulan */
+  .produk {
+    padding: 6rem 5%;
+  }
+  .produk-header {
+    margin-bottom: 3rem;
+  }
+  .produk-header h2 {
+    font-size: 2.5rem;
+  }
+  .produk-header p {
+    font-size: 1.25rem;
+  }
+  .produk-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  .produk-card {
+    border-radius: 1rem;
+  }
+  .produk-card img {
+    height: 12rem;
+  }
+  .produk-desc {
+    padding: 1rem;
+  }
+  .produk-desc h3 {
+    font-size: 1.15rem;
+  }
+  .produk-desc p {
+    font-size: 1.15rem;
+  }
+
+  /* Pesan  Sekarang */
+  .pesan {
+    min-height: 25rem;
+    padding: 4rem 5%;
+    background-position: center;
+  }
+  .pesan-content h2 {
+    font-size: 2.5rem;
+  }
+  .pesan-content p {
+    font-size: 1.25rem;
+  }
+  .pesan-content .tombol {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+  }
+
+  /* TENTANG.HTML */
+  .tentang-header {
+    padding: 7rem 5% 2.5rem;
+  }
+  .tentang-header h1 {
+    font-size: 2.4rem;
+  }
+  .tentang-header p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  /* Profil */
+  .profil {
+    padding: 1.5rem 5% 3rem;
+    gap: 2rem;
+  }
+  .profil-content {
+    padding: 2rem;
+    border-radius: 1.5rem;
+  }
+  .profil-content h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+  }
+  .profil-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  .profil-image img {
+    height: 22rem;
+    border-radius: 1.5rem;
+  }
+
+  /* Sejarah */
+  .sejarah {
+    margin-top: 2rem;
+    padding: 3rem 5%;
+    gap: 2rem;
+  }
+  .sejarah-image img {
+    height: 22rem;
+    border-radius: 1.2rem;
+  }
+  .sejarah-content h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .sejarah-content p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+
+  /* Visi Misi */
+  .visi-misi {
+    padding: 5rem 5%;
+  }
+  .visi-misi h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .visi-card,
+  .misi-card {
+    padding: 2rem;
+    border-radius: 1.2rem;
+  }
+  .visi-card h3,
+  .misi-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  .visi-card p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  .misi-card li {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    padding-left: 2.7rem;
+    margin-bottom: 1.2rem;
+  }
+  .misi-card li::before {
+    width: 2rem;
+    height: 2rem;
+    font-size: 0.9rem;
+  }
+
+  /* MENU.HTML */
+  .menu-banner {
+    height: 300px;
+  }
+  .menu-banner-content {
+    padding: 0 5%;
+    max-width: 100%;
+  }
+  .menu-banner-content h1 {
+    font-size: 2rem;
+  }
+  .menu-banner-content p {
+    font-size: 0.78rem;
+    line-height: 1.5;
+  }
+
+  /* Daftar Produk */
+  .daftar-produk {
+    padding: 2.5rem 5%;
+  }
+  .daftar-produk-header {
+    margin-bottom: 1.5rem;
+  }
+  .daftar-produk-header h2 {
+    font-size: 1.7rem;
+  }
+  .daftar-produk-container {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .daftar-produk-card {
+    border-radius: 12px;
+  }
+  .daftar-produk-card img {
+    height: 130px;
+    object-fit: cover;
+  }
+  .daftar-produk-desc {
+    padding: 0.75rem;
+  }
+  .daftar-produk-desc h3 {
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+  }
+  .daftar-produk-desc p {
+    font-size: 0.85rem;
+    margin-bottom: 0.7rem;
+  }
+  .detail-btn {
+    padding: 0.65rem 0.4rem;
+    font-size: 0.8rem;
+    border-radius: 10px;
+  }
+
+  /* Modal Detail Produk */
+  .modal-detail {
+    padding: 15px;
+    overflow-y: auto;
+  }
+  .modal-content {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 25px 18px 20px;
+    border-radius: 18px;
+    max-width: 350px;
+    margin: auto;
+  }
+  .modal-close {
+    top: 10px;
+    right: 15px;
+    font-size: 27px;
+  }
+  .modal-image img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+  .modal-info {
+    padding: 0;
+  }
+  .modal-info h2 {
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+  .modal-info h3 {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+  }
+  .modal-info p {
+    font-size: 0.82rem;
+    line-height: 1.5;
+    margin-bottom: 12px;
+  }
+  .order-note {
+    font-size: 0.75rem;
+  }
+  .order-wa {
+    font-size: 0.82rem;
+    padding: 11px;
+  }
+  .program-header {
+    padding: 7rem 5% 2.5rem;
+  }
+  .program-header h1 {
+    font-size: 2.2rem;
+  }
+  .program-header p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* PROGRAM.HTML */
+  .program-section {
+    padding: 2.5rem 5%;
+  }
+  .program-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  /* Teks Program */
+  .program-text h2 {
+    font-size: 1.9rem;
+    margin-bottom: 1rem;
+  }
+  .program-text p {
+    font-size: 1.05rem;
+    line-height: 1.65;
+  }
+
+  /* Gambar Program */
+  .program-image img {
+    height: 22rem;
+    border-radius: 1.2rem;
+  }
+
+  /* Banner Hubungi Kami */
+  .program-cta {
+    padding: 2.5rem 5%;
+  }
+  .program-cta-container {
+    position: relative;
+    min-height: 22rem;
+    padding: 1.8rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  /* Teks Banner */
+  .program-cta-text {
+    position: relative;
+    z-index: 3;
+    width: 42%;
+    max-width: 42%;
+  }
+  .program-cta-text h2 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+  .program-cta-text p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* Gambar Banner */
+  .program-cta-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 42%;
+    height: 100%;
+    z-index: 1;
+  }
+  .program-cta-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  /* Overlay Gambar */
+  .program-cta-container::after {
+    width: 65%;
+    background: linear-gradient(
+      to right,
+      #4e2a14 0%,
+      #4e2a14 15%,
+      rgba(78, 42, 20, 0.85) 35%,
+      rgba(78, 42, 20, 0.25) 65%,
+      transparent 100%
+    );
+  }
+
+  /* Tombol Hubungi Kami */
+  .program-cta-button {
+    position: absolute;
+    z-index: 5;
+    left: 62%;
+    top: 50%;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    padding: 0.9rem 1.2rem;
+    font-size: 0.85rem;
+  }
+  .program-cta-button:hover {
+    transform: translate(-50%, calc(-50% - 3px));
+  }
+
+  /* KONTAK.HTML */
+  .kontak-header {
+    padding: 7rem 5% 2.5rem;
+  }
+  .kontak-header h1 {
+    font-size: 2.3rem;
+  }
+  .kontak-header p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  /* Kontak Utama */
+  .kontak-utama {
+    padding: 2.5rem 5%;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .kontak-image img {
+    height: 22rem;
+    border-radius: 1rem;
+  }
+  .kontak-content {
+    gap: 2rem;
+  }
+
+  /* Hubungi Kami */
+  .hubungi-kami h2 {
+    font-size: 1.9rem;
+  }
+  .hubungi-kami p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  .kontak-wa {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  /* Media Sosial */
+  .media-sosial h2 {
+    font-size: 1.7rem;
+  }
+  .media-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .media-card {
+    padding: 1.2rem;
+  }
+  .media-title h3 {
+    font-size: 1.1rem;
+  }
+  .media-card p {
+    font-size: 0.9rem;
+  }
+  .media-card a {
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  /* Lokasi dan Jam Operasional */
+  .informasi-kontak {
+    padding: 3rem 5%;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .lokasi-card {
+    padding: 1rem;
+  }
+  .lokasi-title h2 {
+    font-size: 1.6rem;
+  }
+  .lokasi-card p {
+    font-size: 0.9rem;
+  }
+  .lokasi-card iframe {
+    height: 22rem;
+  }
+  .maps-button {
+    padding: 0.9rem;
+    font-size: 0.9rem;
+  }
+
+  /* Jam Operasional */
+  .jam-card {
+    padding: 1.5rem;
+    min-height: auto;
+  }
+  .jam-card h2 {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+  }
+  .jam-item {
+    padding: 1rem;
+    gap: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .footer {
+    padding: 2.5rem 5% 1rem;
+  }
+
+  /* Dekorasi Lingkaran */
+  .footer::before {
+    width: 180px;
+    height: 180px;
+    top: -50px;
+    left: -50px;
+  }
+
+  /* Container Footer */
+  .footer-container {
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    column-gap: 0.8rem;
+    row-gap: 1.8rem;
+    align-items: start;
+    padding: 0.5rem 0 2rem;
+  }
+
+  /* Brand */
+  .footer-brand {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+  .footer-brand img {
+    width: 45px;
+    height: 45px;
+  }
+  .footer-brand h2 {
+    font-size: 1.8rem;
+    white-space: normal;
+  }
+
+  /* Navigasi */
+  .footer-nav {
+    grid-column: 1;
+  }
+  .footer-nav h3,
+  .footer-contact h3 {
+    font-size: 0.95rem;
+    margin-bottom: 0.7rem;
+  }
+  .footer-nav li {
+    margin-bottom: 0.5rem;
+  }
+  .footer-nav a {
+    font-size: 0.8rem;
+  }
+
+  /* Hubungi Kami */
+  .footer-contact {
+    grid-column: 2;
+  }
+  .footer-contact p {
+    font-size: 0.8rem;
+    line-height: 1.6;
+    margin-bottom: 0.6rem;
+  }
+
+  /* Media Sosial */
+  .footer-social {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+  }
+  .footer-social a {
+    width: 27px;
+    height: 27px;
+  }
+  .footer-social img {
+    width: 14px;
+    height: 14px;
+  }
+
+  /* Copyright */
+  .footer-bottom {
+    padding-top: 0.8rem;
+  }
+  .footer-bottom p {
+    font-size: 0.75rem;
+    line-height: 1.5;
+  }
+}
