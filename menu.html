@@ -1,0 +1,721 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Menu & Produk - TEFA Bakery</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inria+Serif:wght@400;700&family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <a class="navbar-logo">
+          <img src="assets/polijebake.png" alt="PolijeBake" />
+        </a>
+
+        <div class="navbar-nav">
+          <a href="index.html">Beranda</a>
+          <a href="tentang.html">Tentang</a>
+          <a href="menu.html" class="active">Produk</a>
+          <a href="program.html">Program</a>
+          <a href="kontak.html">Kontak</a>
+        </div>
+
+        <div class="navbar-extra">
+          <a href="#" id="hamburger-menu">
+            <i data-feather="menu"></i>
+          </a>
+        </div>
+      </nav>
+    </header>
+    <!-- NAVBAR END -->
+
+    <!-- MAIN -->
+    <main>
+      <!-- BANNER MENU -->
+      <section class="menu-banner">
+        <div class="menu-banner-content">
+          <h1>Menu & Produk</h1>
+
+          <p>
+            Temukan berbagai pilihan roti, pastry, dan hidangan lezat dari TEFA
+            Bakery
+          </p>
+        </div>
+
+        <img
+          src="assets/banner-menu.png"
+          alt="Berbagai pilihan roti dan pastry TEFA Bakery"
+        />
+      </section>
+
+      <!-- DAFTAR PRODUK -->
+      <section class="daftar-produk">
+        <!-- JUDUL PRODUK -->
+        <div class="daftar-produk-header">
+          <h2>Daftar Produk</h2>
+        </div>
+
+        <!-- CONTAINER PRODUK -->
+        <div class="daftar-produk-container">
+          <!-- PRODUK 1 -->
+          <article class="daftar-produk-card">
+            <img src="assets/RotiSobek1.png" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Sobek</h3>
+              <p>Rp 14.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Sobek"
+                data-harga="Rp 14.000"
+                data-deskripsi="Roti lembut dengan tekstur empuk dan rasa manis yang pas. Memiliki bentuk berlapis yang mudah disobek menjadi beberapa bagian, cocok dinikmati bersama keluarga atau teman."
+                data-gambar="assets/RotiSobek1.png"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 2 -->
+          <article class="daftar-produk-card">
+            <img src="assets/RotiKenong.png" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Kenong</h3>
+              <p>Rp 12.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Kenong"
+                data-harga="Rp 12.000"
+                data-deskripsi="Roti lembut dengan bentuk bulat dan tekstur empuk, dilengkapi topping krim manis yang memberikan cita rasa gurih dan manis. Cocok dinikmati sebagai camilan maupun teman bersantai."
+                data-gambar="assets/RotiKenong.png"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 3 -->
+          <article class="daftar-produk-card">
+            <img src="assets/RotiKasur.png" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Kasur</h3>
+              <p>Rp 14.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Kasur"
+                data-harga="Rp 14.000"
+                data-deskripsi="Roti lembut dengan tekstur empuk dan bentuk kotak yang saling menyatu. Bagian atasnya dilengkapi taburan wijen yang memberikan cita rasa gurih dan aroma khas. Cocok dinikmati bersama keluarga sebagai camilan."
+                data-gambar="assets/RotiKasur.png"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 4 -->
+          <article class="daftar-produk-card">
+            <img src="assets/RotiTawar.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Tawar Original</h3>
+              <p>Rp 12.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Tawar Original"
+                data-harga="Rp 12.000"
+                data-deskripsi="Roti tawar dengan tekstur lembut, empuk, dan rasa yang ringan. Cocok dijadikan menu sarapan."
+                data-gambar="assets/RotiTawar.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 5 -->
+          <article class="daftar-produk-card">
+            <img src="assets/RotiSisir.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Sisir</h3>
+              <p>Rp 12.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Sisir"
+                data-harga="Rp 12.000"
+                data-deskripsi="Roti sisir dengan tekstur lembut dan empuk, memiliki rasa manis dengan aroma mentega yang harum. Setiap lapisannya mudah dipisahkan dan cocok dinikmati sebagai camilan atau teman minum teh."
+                data-gambar="assets/RotiSisir.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 6 -->
+          <article class="daftar-produk-card">
+            <img src="assets/Bagelan.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Bagelan</h3>
+              <p>Rp 10.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Bagelan"
+                data-harga="Rp 10.000"
+                data-deskripsi="camilan roti kering dengan tekstur garing, renyah, dan aroma mentega yang harum."
+                data-gambar="assets/Bagelan.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 7 -->
+          <article class="daftar-produk-card">
+            <img src="assets/BlunderKeju.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Blunder Keju</h3>
+              <p>Rp 8.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Blunder Keju"
+                data-harga="Rp 8.000"
+                data-deskripsi="Roti berbentuk bulat dengan tekstur lembut dan empuk, dilengkapi taburan keju di bagian atasnya. Perpaduan rasa gurih keju dan roti yang sedikit manis menghasilkan cita rasa lezat di setiap gigitan."
+                data-gambar="assets/BlunderKeju.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 8 -->
+          <article class="daftar-produk-card">
+            <img src="assets/BlunderCoklat.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Blunder Coklat</h3>
+              <p>Rp 8.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Blunder Coklat"
+                data-harga="Rp 8.000"
+                data-deskripsi="Roti berbentuk bulat dengan tekstur lembut dan empuk, dilengkapi taburan meses cokelat di bagian atasnya. Memiliki perpaduan rasa manis dan cokelat yang nikmat, cocok untuk camilan sehari-hari."
+                data-gambar="assets/BlunderCoklat.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 9 -->
+          <article class="daftar-produk-card">
+            <img src="assets/PisangCoklat.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Pisang Coklat</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Pisang Coklat"
+                data-harga="Rp 5.000"
+                data-deskripsi="Roti berbentuk lonjong dengan tekstur lembut dan kulit luar berwarna keemasan. Berisi perpaduan pisang dan cokelat yang memberikan rasa manis dan lezat. Cocok dinikmati sebagai camilan saat bersantai."
+                data-gambar="assets/PisangCoklat.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 10 -->
+          <article class="daftar-produk-card">
+            <img src="assets/BoyPutih.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Boy Putih</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Boy Putih"
+                data-harga="Rp 5.000"
+                data-deskripsi="Roti berbentuk bulat dengan tekstur lembut dan lapisan atas yang renyah. Memiliki rasa manis dengan taburan cokelat yang menambah cita rasa lezat. Cocok dinikmati sebagai camilan atau teman minum kopi dan teh."
+                data-gambar="assets/BoyPutih.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 11 -->
+          <article class="daftar-produk-card">
+            <img src="assets/RotiSosis.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Sosis</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Sosis"
+                data-harga="Rp 5.000"
+                data-deskripsi="Roti lembut berbentuk bunga dengan potongan sosis di setiap bagiannya. Dilengkapi saus dan topping gurih yang menambah cita rasa lezat."
+                data-gambar="assets/RotiSosis.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 12 -->
+          <article class="daftar-produk-card">
+            <img src="assets/Pizza.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Pizza</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Pizza"
+                data-harga="Rp 5.000"
+                data-deskripsi="Pizza mini dengan roti lembut dan topping saus tomat, sosis, serta keju yang meleleh. Dilengkapi taburan oregano yang memberikan aroma khas dan cita rasa gurih."
+                data-gambar="assets/Pizza.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 13 -->
+          <article class="daftar-produk-card">
+            <img src="assets/RotiLatju.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Cream Coklat Keju</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Cream Coklat Keju"
+                data-harga="Rp 5.000"
+                data-deskripsi="Roti lembut dengan lapisan cream manis yang dilengkapi taburan meses cokelat dan keju parut. Perpaduan rasa manis cokelat dan gurih keju memberikan sensasi lezat di setiap gigitan."
+                data-gambar="assets/RotiLatju.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 14 -->
+          <article class="daftar-produk-card">
+            <img src="assets/AbonGulung.png" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Abon Gulung</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Abon Gulung"
+                data-harga="Rp 5.000"
+                data-deskripsi="Roti gulung dengan tekstur lembut yang dipadukan dengan isian abon gurih dan lezat. Memiliki perpaduan rasa gurih dan sedikit manis yang cocok dijadikan camilan maupun teman bersantai."
+                data-gambar="assets/AbonGulung.png"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 15 -->
+          <article class="daftar-produk-card">
+            <img src="assets/RotiBoy.png" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Boy Mocca</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Boy Mocca"
+                data-harga="Rp 5.000"
+                data-deskripsi="Roti lembut dengan lapisan luar bercita rasa kopi dan mocca yang khas. Memiliki aroma harum dan rasa manis yang pas, cocok dinikmati saat sarapan atau sebagai teman minum kopi."
+                data-gambar="assets/RotiBoy.png"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 16 -->
+          <article class="daftar-produk-card">
+            <img src="assets/RotiCokl1.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Coklat Toping</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Coklat Toping"
+                data-harga="Rp 5.000"
+                data-deskripsi="Roti lembut dengan lapisan cokelat manis di bagian atas, dilengkapi taburan meses warna-warni dan hiasan permen. Memiliki rasa cokelat yang manis dan tekstur roti yang empuk, cocok untuk camilan."
+                data-gambar="assets/RotiCokl1.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 17 -->
+          <article class="daftar-produk-card">
+            <img src="assets/RotiCokl2.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Coklat Toping</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Coklat Toping"
+                data-harga="Rp 5.000"
+                data-deskripsi="Roti lembut dengan lapisan cokelat manis di bagian atas dan taburan kacang cincang yang memberikan tekstur renyah. Perpaduan rasa manis cokelat dan gurih kacang membuat roti ini cocok dijadikan camilan."
+                data-gambar="assets/RotiCokl2.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 18 -->
+          <article class="daftar-produk-card">
+            <img src="assets/RotiKeju.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Keju</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Keju"
+                data-harga="Rp 5.000"
+                data-deskripsi="Roti berbentuk lonjong dengan tekstur lembut dan empuk, dilengkapi taburan keju di bagian atasnya. Perpaduan rasa gurih keju dan manisnya roti menghasilkan cita rasa yang lezat, cocok untuk camilan maupun teman sarapan."
+                data-gambar="assets/RotiKeju.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 19 -->
+          <article class="daftar-produk-card">
+            <img src="assets/RotiAbon.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Abon</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Abon"
+                data-harga="Rp 5.000"
+                data-deskripsi="Roti berbentuk bulat dengan tekstur lembut dan empuk, dilengkapi taburan abon yang melimpah di bagian atasnya. Memiliki cita rasa gurih dan sedikit manis, cocok dijadikan camilan atau teman bersantai."
+                data-gambar="assets/RotiAbon.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 20 -->
+          <article class="daftar-produk-card">
+            <img src="assets/DonatKeju.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Donat Keju</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Donat Keju"
+                data-harga="Rp 5.000"
+                data-deskripsi="Donat dengan tekstur lembut dan empuk, dilapisi cream manis serta taburan keju parut yang melimpah. Perpaduan rasa manis dan gurih keju menjadikan donat ini pilihan camilan yang lezat."
+                data-gambar="assets/DonatKeju.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 21 -->
+          <article class="daftar-produk-card">
+            <img src="assets/RotiSrikaya.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Srikaya</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Srikaya"
+                data-harga="Rp 5.000"
+                data-deskripsi="Roti lembut dengan bentuk tiga bulatan yang menyatu dan tekstur empuk. Memiliki isian srikaya dengan cita rasa manis dan aroma khas yang nikmat. Cocok dijadikan camilan atau teman minum teh."
+                data-gambar="assets/RotiSrikaya.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 22 -->
+          <article class="daftar-produk-card">
+            <img src="assets/RotiMilk.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Milk Sugar</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Milk Sugar"
+                data-harga="Rp 5.000"
+                data-deskripsi="Roti berbentuk lonjong dengan tekstur lembut dan empuk, dilengkapi lapisan gula yang memberikan rasa manis di setiap gigitan. Memiliki aroma harum dan rasa yang ringan, cocok dinikmati sebagai camilan atau teman minum teh."
+                data-gambar="assets/RotiMilk.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 23 -->
+          <article class="daftar-produk-card">
+            <img src="assets/DonatCoklat.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Donat Coklat</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Donat Coklat"
+                data-harga="Rp 5.000"
+                data-deskripsi="Donat dengan tekstur lembut dan empuk, dilapisi cokelat manis serta taburan meses cokelat di bagian atasnya. Memiliki perpaduan rasa manis dan cokelat yang cocok untuk camilan sehari-hari."
+                data-gambar="assets/DonatCoklat.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 24 -->
+          <article class="daftar-produk-card">
+            <img src="assets/CreamCoklat.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Cream Coklat</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Cream Coklat"
+                data-harga="Rp 5.000"
+                data-deskripsi="Roti lembut dengan lapisan cream cokelat yang melimpah dan taburan meses di bagian atasnya. Memiliki rasa manis dan cokelat yang nikmat dengan tekstur roti yang empuk, cocok dijadikan camilan kapan saja."
+                data-gambar="assets/CreamCoklat.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 25 -->
+          <article class="daftar-produk-card">
+            <img src="assets/RotiKacang.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Kacang</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Kacang"
+                data-harga="Rp 5.000"
+                data-deskripsi="Roti berbentuk gulungan yang menyatu dengan isian kacang di bagian tengahnya. Memiliki tekstur lembut dengan rasa manis dan gurih khas kacang, cocok dinikmati sebagai camilan atau teman minum teh."
+                data-gambar="assets/RotiKacang.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 25 -->
+          <article class="daftar-produk-card">
+            <img src="assets/DonatLatju.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Donat Coklat Keju</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Donat Coklat Keju"
+                data-harga="Rp 5.000"
+                data-deskripsi="Donat lembut dengan lapisan cokelat manis yang dipadukan dengan taburan keju parut dan meses cokelat. Perpaduan rasa manis dan gurih memberikan cita rasa yang nikmat untuk camilan."
+                data-gambar="assets/DonatLatju.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+
+          <!-- PRODUK 25 -->
+          <article class="daftar-produk-card">
+            <img src="assets/RotiCreju.jpg" alt="Roti" />
+
+            <div class="daftar-produk-desc">
+              <h3>Roti Cream Keju</h3>
+              <p>Rp 5.000</p>
+
+              <button
+                class="detail-btn"
+                data-nama="Roti Cream Keju"
+                data-harga="Rp 5.000"
+                data-deskripsi="Roti lembut dengan lapisan cream manis dan taburan keju parut yang melimpah di bagian atasnya. Memiliki perpaduan rasa manis dan gurih dengan tekstur yang empuk, cocok dinikmati sebagai camilan."
+                data-gambar="assets/RotiCreju.jpg"
+              >
+                Detail
+              </button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- MODAL DETAIL PRODUK -->
+      <div class="modal-detail" id="modal-detail">
+        <div class="modal-content">
+          <!-- TOMBOL TUTUP -->
+          <button class="modal-close" id="modal-close">&times;</button>
+
+          <!-- GAMBAR PRODUK -->
+          <div class="modal-image">
+            <img src="" alt="Gambar Produk" id="detail-gambar" />
+          </div>
+
+          <!-- INFORMASI PRODUK -->
+          <div class="modal-info">
+            <h2 id="detail-nama">Roti Cokelat</h2>
+
+            <h3 id="detail-harga">Rp 8.000</h3>
+
+            <p id="detail-deskripsi">
+              Roti lembut dengan isian cokelat yang manis dan lezat.
+            </p>
+
+            <a
+              href="#"
+              class="order-wa"
+              id="order-wa"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Order via WhatsApp
+            </a>
+
+            <p class="order-note">
+              Klik tombol untuk menghubungi penjual dan melanjutkan pemesanan
+              melalui WhatsApp.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- BRAND -->
+        <div class="footer-brand">
+          <img src="assets/logotefa.png" alt="Logo TEFA Bakery" />
+          <h2>Tefa Bakery</h2>
+        </div>
+
+        <!-- NAVIGASI -->
+        <div class="footer-nav">
+          <h3>Navigasi</h3>
+
+          <ul>
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="tentang.html">Tentang</a></li>
+            <li><a href="menu.html">Produk</a></li>
+            <li><a href="program.html">Program</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+          </ul>
+        </div>
+
+        <!-- HUBUNGI KAMI -->
+        <div class="footer-contact">
+          <h3>Hubungi Kami</h3>
+
+          <p>
+            Jl. Tawang Mangu No. 68, Pintu Masuk Belakang Politeknik Negeri
+            Jember
+          </p>
+
+          <div class="footer-social">
+            <a href="https://wa.me/6282333497811">
+              <img src="assets/wa.png" alt="WhatsApp" />
+            </a>
+
+            <a href="https://www.instagram.com/tefasippolije">
+              <img src="assets/ig.png" alt="Instagram" />
+            </a>
+
+            <a href="https://www.facebook.com/tefa.sip?">
+              <img src="assets/fb.png" alt="Facebook" />
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- COPYRIGHT -->
+      <div class="footer-bottom">
+        <p>&copy; 2026 TEFA Bakery. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Feather Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
